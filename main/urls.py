@@ -7,7 +7,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('Library_kg.urls')),
-    path('', include('Clothing.urls')),
+    path('Clothing/', include('Clothing.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL,
