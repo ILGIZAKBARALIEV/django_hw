@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Library_kg',
     'Clothing',
+    'my_orders'
 ]
 
 MIDDLEWARE = [

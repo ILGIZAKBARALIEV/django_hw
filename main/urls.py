@@ -8,6 +8,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('Library_kg.urls')),
     path('Clothing/', include('Clothing.urls')),
+    path('my_ordres/', include ('my_orders.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL,

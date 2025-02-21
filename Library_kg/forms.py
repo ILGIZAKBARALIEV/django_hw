@@ -2,7 +2,7 @@ from django import forms
 from . import models
 
 
-class ReviewForm(forms.ModelForm):
+class CreateReviewForm(forms.ModelForm):
     class Meta:
         model = models.Review
-        fields = ('stars', 'text')
+        fields = "__all__"

@@ -1,8 +1,10 @@
-from django.shortcuts import render
-from datetime import datetime
+from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse
+from datetime import datetime
 from . import models, forms
-from django.shortcuts import redirect
+from django.views import generic
+from django.urls import reverse
+
 
 def about_me(request):
     return HttpResponse("Меня зовут Ильгиз ")
@@ -15,29 +17,77 @@ def text_and_photo(request):
 def time_now(request):
     return  HttpResponse(f'Current time is: {datetime.now()}')
 
+# create review
 
-def books_list(request):
-    if request.method == 'GET':
-        books = models.BookModel.objects.all()
-        return render(request, 'book.html', {'books': books})
+class SearchView(generic.ListView):
+    template_name = 'book.html'
+    context_object_name = 'book'
 
-def books_detail_view(request, id):
-    if request.method == 'GET':
-        book = models.BookModel.objects.get(id=id)
-        form = forms.ReviewForm()
-        context_object_name = {
-            'book':book,
-            'form':form
-        }
-        book = models.BookModel.objects.get(id=id)
-        return render(request, 'book_detail.html', context=context_object_name)
-    elif request.method == 'POST':
-        form = forms.ReviewForm(request.POST)
-        if form.is_valid():
-            book = models.BookModel.objects.get(id=id)
-            review = form.save(commit=False)
-            review.book = book
-            review.save()
-            return redirect('books_detail_view', id=id)
-        else:
-            return HttpResponse('Form is not valid')
+    def get_queryset(self):
+        return models.BookModel.objects.filter(title__icontains=self.request.GET.get('q'))
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['q'] = self.request.GET.get('q')
+        return context
+
+
+class CreateReviewView(generic.CreateView):
+    template_name = 'create_review.html'
+    form_class = forms.CreateReviewForm
+
+    def form_valid(self, form):
+        self.object = form.save()
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        return reverse('book_detail', kwargs={'id': self.object.choice_book.id})
+
+
+# def create_review_view(request):
+#     if request.method == "POST":
+#         form = forms.CreateReviewForm(request.POST, request.FILES)
+#         if form.is_valid():
+#             form.save(commit=False)
+#             book_id = form.cleaned_data['choice_book'].id
+#             form.save()
+#             return redirect('book_detail', id=book_id)
+#     else:
+#         form = forms.CreateReviewForm()
+#     return render(request, template_name='create_review.html', context={'form': form,})
+
+
+class BookListView(generic.ListView):
+    template_name = 'book.html'
+    context_object_name = 'book'
+    model = models.BookModel
+
+    def get_queryset(self):
+        return self.model.objects.all().order_by('-id')
+
+
+# def book_list_view(request):
+#     if request.method == "GET":
+#         query = models.BookModel.objects.all().order_by('-id')
+#         context_object_name = {
+#             'book': query,
+#         }
+#         return render(request, template_name='book.html', context=context_object_name)
+
+
+class BookDetailView(generic.DetailView):
+    template_name = 'book_detail.html'
+    context_object_name = 'book_id'
+
+    def get_object(self, *args, **kwargs):
+        book_id = self.kwargs.get('id')
+        return get_object_or_404(models.BookModel, id=book_id)
+
+# def book_detail_view(request, id):
+#     if request.method == "GET":
+#         query = get_object_or_404(models.BookModel, id=id)
+#         context_object_name = {
+#             'book_id': query,
+#         }
+#         return render(request, template_name='book_detail.html', context=context_object_name)
+
