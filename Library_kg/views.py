@@ -59,7 +59,7 @@ class CreateReviewView(generic.CreateView):
 
 class BookListView(generic.ListView):
     template_name = 'book.html'
-    context_object_name = 'book'
+    context_object_name = 'books'
     model = models.BookModel
 
     def get_queryset(self):
