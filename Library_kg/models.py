@@ -14,6 +14,7 @@ class BookModel(models.Model):
         ('Научная фантастика', 'Научная фантастика'),
         ('Драма', 'Драма'),
         ('Комедия', 'Комедия'),
+
     )
 
     title = models.CharField(max_length=255,verbose_name="Название книги")
@@ -54,3 +55,4 @@ class Review(models.Model):
     class Meta:
         verbose_name = 'Отзыв'
         verbose_name_plural = 'Отзывы'
+

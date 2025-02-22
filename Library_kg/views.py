@@ -4,6 +4,7 @@ from datetime import datetime
 from . import models, forms
 from django.views import generic
 from django.urls import reverse
+from .models import BookModel
 
 
 def about_me(request):
@@ -37,11 +38,18 @@ class CreateReviewView(generic.CreateView):
     form_class = forms.CreateReviewForm
 
     def form_valid(self, form):
-        self.object = form.save()
+        # Получаем book_id из URL
+        book_id = self.kwargs.get('book_id')  # Получаем book_id из URL
+        book = get_object_or_404(BookModel, id=book_id)  # Ищем книгу по ID
+
+        # Привязываем отзыв к книге
+        form.instance.book = book
         return super().form_valid(form)
 
     def get_success_url(self):
-        return reverse('book_detail', kwargs={'id': self.object.choice_book.id})
+        # Исправляем параметр на 'book_id', чтобы он соответствовал вашему URL-шаблону
+        return reverse('book_detail', kwargs={'book_id': self.object.book.id})
+
 
 
 # def create_review_view(request):
@@ -60,10 +68,11 @@ class CreateReviewView(generic.CreateView):
 class BookListView(generic.ListView):
     template_name = 'book.html'
     context_object_name = 'books'
-    model = models.BookModel
+    model = BookModel
 
     def get_queryset(self):
-        return self.model.objects.all().order_by('-id')
+        return self.model.objects.all()  # или добавь фильтры по необходимости
+
 
 
 # def book_list_view(request):
