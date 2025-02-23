@@ -1,5 +1,5 @@
 from django.db import models
-from Library_kg.models import BookModel
+from books.models import BookModel
 
 
 class MyOrdersModel(models.Model):

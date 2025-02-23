@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="65698147-3417-45b7-9641-ae81bfcea3f6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DJ_HW.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DJ_HW.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library_kg/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library_kg/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library_kg/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library_kg/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library_kg/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library_kg/migrations/0002_alter_review_book.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library_kg/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library_kg/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library_kg/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library_kg/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library_kg/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/book_images/1016983758_229_0_1767_1538_1400x0_80_0_0_2aefd1339b79cab405c4c51af36a8266.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/book_images/Stamps_of_Kyrgyzstan_2009-577.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/book_images/Stamps_of_Kyrgyzstan_2009-582.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_orders/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_orders/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_orders/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_orders/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_orders/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_orders/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_orders/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_orders/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requestations" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/book.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/book.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/book_detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/book_detail.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/hastags.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/hastags.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/book.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/book_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/book_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/components/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/components/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/create_review.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/create_review.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tags/adult_clothes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tags/all_clothes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tags/kids_clothes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tags/teenager_clothes.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ILGIZAKBARALIEV"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ILGIZAKBARALIEV/django_hw.git",
+    "accountId": "c6cedbb9-799e-48e1-8ddc-a47d85eb6fab"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2tRnGMNWs4Dl6BMbAuKV7WVzn54" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "test",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-PY-243.24978.54" />
+        <option value="bundled-python-sdk-91e3b7efe1d4-466328ff949b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.24978.54" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="65698147-3417-45b7-9641-ae81bfcea3f6" name="Changes" comment="" />
+      <created>1740323657620</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740323657620</updated>
+      <workItem from="1740323658825" duration="408000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

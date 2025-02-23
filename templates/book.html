@@ -1,25 +1,26 @@
-{% load static %}
 {% include 'components/header.html' %}
-<link rel="stylesheet" href="{% static 'css/book.css' %}">
 <!-- Контент с карточками -->
 <div class="container mt-4 content">
     <div class="row justify-content-center">
         <!-- Пример карточки книги -->
-        {% for book in books %}
+        <button><a href="{% url 'create_review' %}">Оставить комментарий </a></button>
+
+        {% for i in book %}
         <div class="col-md-4 mb-4">
             <div class="card" style="width: 100%;">
-                <img src="{{ book.image.url }}" class="card-img-top" alt="Обложка книги">
+                <img src="{{ i.image.url }}" class="card-img-top" alt="Обложка книги">
                 <div class="card-body">
-                    <h5 class="card-title">{{ book.title }}</h5>
-                    <p class="card-text">{{ book.created_at }}</p>
-                    <a href="{% url 'book_detail' book.id %}" class="btn btn-primary">Подробнее</a>
+                    <h5 class="card-title">{{ i.title }}</h5>
+                    <p class="card-text">{{ i.created_at }}</p>
+                    <a href="/book_detail/{{ i.id }}/" class="btn btn-primary">Подробнее</a>
                 </div>
             </div>
         </div>
         {% endfor %}
+
+        <!-- Добавьте дополнительные карточки книг здесь -->
     </div>
-    <!-- Добавьте дополнительные карточки книг здесь -->
 </div>
 
 <!-- Футер -->
-{% include 'components/footer.html' %}
+{% include "components/footer.html"%}
