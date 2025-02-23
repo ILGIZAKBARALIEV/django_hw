@@ -4,55 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65698147-3417-45b7-9641-ae81bfcea3f6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DJ_HW.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DJ_HW.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_kg/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_kg/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_kg/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_kg/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_kg/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_kg/migrations/0002_alter_review_book.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_kg/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_kg/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_kg/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_kg/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_kg/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/book_images/1016983758_229_0_1767_1538_1400x0_80_0_0_2aefd1339b79cab405c4c51af36a8266.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/book_images/Stamps_of_Kyrgyzstan_2009-577.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/book_images/Stamps_of_Kyrgyzstan_2009-582.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_orders/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_orders/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_orders/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_orders/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_orders/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_orders/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_orders/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_orders/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requestations" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/book.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/book.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/book_detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/book_detail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/hastags.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/hastags.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/book.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/book_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/book_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/components/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/components/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/create_review.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/create_review.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tags/adult_clothes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tags/all_clothes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tags/kids_clothes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tags/teenager_clothes.html" beforeDir="false" />
-    </list>
+    <list default="true" id="65698147-3417-45b7-9641-ae81bfcea3f6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,7 +64,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1740323657620</updated>
-      <workItem from="1740323658825" duration="408000" />
+      <workItem from="1740323658825" duration="732000" />
     </task>
     <servers />
   </component>
