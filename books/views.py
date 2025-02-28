@@ -1,13 +1,13 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse
 from datetime import datetime
-
-
 from . import models, forms
 from django.views import generic
 from django.urls import reverse
 
-
+from django.views.decorators.cache import cache_page
+from django.utils.decorators import method_decorator
+from django.core.cache import cache
 
 #create review
 
@@ -66,14 +66,18 @@ class BookListView(generic.ListView):
 #         return render(request, template_name='book.html', context=context_object_name)
 
 
-class BookDetailView(generic.DetailView):
-    template_name = 'book_detail.html'
-    context_object_name = 'book_id'
+@method_decorator(cache_page(60*15), name='dispatch')
+class BookListView(generic.ListView):
+    template_name = 'book.html'
+    context_object_name = 'book'
+    model = models.BookModel
 
-    def get_object(self, *args, **kwargs):
-        book_id = self.kwargs.get('id')
-        return get_object_or_404(models.BookModel, id=book_id)
-
+    def get_queryset(self):
+        books = cache.get('books')
+        if not books:
+            books = self.model.objects.all().order_by('-id')
+            cache.set('books', books, 60*15)
+        return books
 
 # def book_detail_view(request, id):
 #     if request.method == "GET":
